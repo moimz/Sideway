@@ -16,6 +16,8 @@
 		5DA1000000000000000000B1 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DA1000000000000000000F1 /* manifest.json */; };
 		5DA1000000000000000000B2 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 5DA1000000000000000000F2 /* content.js */; };
 		5DA1000000000000000000B3 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 5DA1000000000000000000F3 /* icons */; };
+		5DB2000000000000000000A3 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 5DB2000000000000000000A2 /* Sparkle */; };
+		5DB2000000000000000000A5 /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2000000000000000000A4 /* Updater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		5DA1000000000000000000F3 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
 		5D94EEB10892997D944341B5 /* Sideway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sideway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D2D0EF33BB9BDB1F15930EF /* Sideway Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sideway Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB2000000000000000000A4 /* Updater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
+		5DB2000000000000000000A6 /* Sideway-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sideway-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB2000000000000000000A3 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +105,8 @@
 			children = (
 				5DFB31C9B4DEE6AB8F57510A /* AppDelegate.swift */,
 				5D9BD9156A997BFE37D34A4D /* ViewController.swift */,
+				5DB2000000000000000000A4 /* Updater.swift */,
+				5DB2000000000000000000A6 /* Sideway-Info.plist */,
 				5D7DDCE02341EA85288D053C /* Icon.png */,
 				5DCFAA68F80CD6FD00C795C9 /* Assets.xcassets */,
 				5D965171CEAB3680B5B27C9B /* Sideway.entitlements */,
@@ -145,6 +152,9 @@
 				5DC4755F36E9F1EAF48CD5FC /* PBXTargetDependency */,
 			);
 			name = Sideway;
+			packageProductDependencies = (
+				5DB2000000000000000000A2 /* Sparkle */,
+			);
 			productName = Sideway;
 			productReference = 5D94EEB10892997D944341B5 /* Sideway.app */;
 			productType = "com.apple.product-type.application";
@@ -191,6 +201,9 @@
 				ko,
 				Base,
 			);
+			packageReferences = (
+				5DB2000000000000000000A1 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			mainGroup = 5D2EAB5745E29B2AE56393C5;
 			productRefGroup = 5D26F08429CDC4A5C16CCB74 /* Products */;
 			projectDirPath = "";
@@ -231,6 +244,7 @@
 			files = (
 				5DBA6A4F29F16ADF48747874 /* ViewController.swift in Sources */,
 				5D6264BEA1A1282B419970B2 /* AppDelegate.swift in Sources */,
+				5DB2000000000000000000A5 /* Updater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +286,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				ARCHS = arm64;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,6 +310,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				ARCHS = arm64;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -315,13 +331,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Sideway;
+				INFOPLIST_FILE = "Sideway/Sideway-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.moimz.Sideway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -341,13 +358,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Sideway;
+				INFOPLIST_FILE = "Sideway/Sideway-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.moimz.Sideway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -370,7 +388,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -399,7 +417,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -442,6 +460,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DB2000000000000000000A1 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = exactVersion;
+				version = 2.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DB2000000000000000000A2 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DB2000000000000000000A1 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5DA5271A3DFEA20AED3D78F2 /* Project object */;
 }

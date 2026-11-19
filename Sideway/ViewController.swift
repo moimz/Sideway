@@ -77,6 +77,15 @@ final class ViewController: NSViewController {
 
 struct SidewayView: View {
     @ObservedObject var status: ExtensionStatus
+    private let updater = Updater.shared
+
+    /// "2.0 (2)" — 버전 (빌드 번호)
+    private var appVersion: String {
+        let info = Bundle.main.infoDictionary
+        let version = info?["CFBundleShortVersionString"] as? String ?? ""
+        let build = info?["CFBundleVersion"] as? String ?? ""
+        return "\(version) (\(build))"
+    }
 
     var body: some View {
         ScrollView {
@@ -166,7 +175,7 @@ struct SidewayView: View {
                 }
 
                 HStack {
-                    Text("Sideway 1.1 · 방문 기록 수집 없음")
+                    Text(verbatim: "Sideway \(appVersion) · 방문 기록 수집 없음")
                     Spacer()
                     Button("앱 종료  ⌘Q") {
                         NSApp.terminate(nil)
@@ -177,6 +186,23 @@ struct SidewayView: View {
                 .font(.system(size: 10))
                 .foregroundStyle(.secondary)
                 .padding(.top, 18)
+
+                HStack {
+                    Toggle("자동으로 업데이트 확인", isOn: Binding(
+                        get: { updater.automaticallyChecks },
+                        set: { updater.automaticallyChecks = $0 }
+                    ))
+                    .toggleStyle(.checkbox)
+                    Spacer()
+                    Button("업데이트 확인…") {
+                        updater.checkForUpdates()
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(!updater.canCheck)
+                }
+                .font(.system(size: 10))
+                .foregroundStyle(.secondary)
+                .padding(.top, 10)
 
                 Button("아이콘 출처 및 라이선스") {
                     status.showLicense = true

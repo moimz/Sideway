@@ -5,7 +5,7 @@
 
 import Cocoa
 
-@main
+@main @MainActor
 final class AppDelegate: NSObject, NSApplicationDelegate {
 
     private var window: NSWindow?
@@ -19,6 +19,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         installSidewayMenu()
+        _ = Updater.shared
 
         let window = NSWindow(contentViewController: ViewController())
         window.styleMask = [.titled, .closable, .miniaturizable]
@@ -31,11 +32,23 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         true
     }
+
+    @objc func checkForUpdates(_ sender: Any?) {
+        Updater.shared.checkForUpdates()
+    }
+
+    func validateMenuItem(_ menuItem: NSMenuItem) -> Bool {
+        if menuItem.action == #selector(checkForUpdates(_:)) {
+            return Updater.shared.canCheck
+        }
+        return true
+    }
 }
 
 func installSidewayMenu() {
     let appMenu = NSMenu(title: "Sideway")
     appMenu.addItem(withTitle: "Sideway에 관하여", action: #selector(NSApplication.orderFrontStandardAboutPanel(_:)), keyEquivalent: "")
+    appMenu.addItem(withTitle: "업데이트 확인…", action: #selector(AppDelegate.checkForUpdates(_:)), keyEquivalent: "")
     appMenu.addItem(.separator())
     appMenu.addItem(withTitle: "Sideway 가리기", action: #selector(NSApplication.hide(_:)), keyEquivalent: "h")
     appMenu.addItem(.separator())
