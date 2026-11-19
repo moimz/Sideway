@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D6264BEA1A1282B419970B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFB31C9B4DEE6AB8F57510A /* AppDelegate.swift */; };
+		5DBA6A4F29F16ADF48747874 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9BD9156A997BFE37D34A4D /* ViewController.swift */; };
+		5DDF0011393088BF12FF8183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCFAA68F80CD6FD00C795C9 /* Assets.xcassets */; };
+		5DDC3669D1F41B80A9876BC5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7DDCE02341EA85288D053C /* Icon.png */; };
+		5D025E197411B2A8B5A775B8 /* Sideway Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5D2D0EF33BB9BDB1F15930EF /* Sideway Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5DF1C0BCF48E8B2E2995C5AD /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D05B3014CA8DDEDD3195E10 /* SafariWebExtensionHandler.swift */; };
+		5DA1000000000000000000B1 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DA1000000000000000000F1 /* manifest.json */; };
+		5DA1000000000000000000B2 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 5DA1000000000000000000F2 /* content.js */; };
+		5DA1000000000000000000B3 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 5DA1000000000000000000F3 /* icons */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D2887FE8DFF5F3EF61EF210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA5271A3DFEA20AED3D78F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D3B65A1141D76A5EE09149C;
+			remoteInfo = "Sideway Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D806482D9E37DD084D041D7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5D025E197411B2A8B5A775B8 /* Sideway Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5DFB31C9B4DEE6AB8F57510A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D9BD9156A997BFE37D34A4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DCFAA68F80CD6FD00C795C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D7DDCE02341EA85288D053C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		5D965171CEAB3680B5B27C9B /* Sideway.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sideway.entitlements; sourceTree = "<group>"; };
+		5D05B3014CA8DDEDD3195E10 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		5D94DAF0C6D8616CE266A535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D108B903FF8A0DE73DC3FD2 /* Sideway Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sideway Extension.entitlements"; sourceTree = "<group>"; };
+		5DA1000000000000000000F1 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		5DA1000000000000000000F2 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		5DA1000000000000000000F3 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
+		5D94EEB10892997D944341B5 /* Sideway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sideway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D2D0EF33BB9BDB1F15930EF /* Sideway Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sideway Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D3E01A711DC2333BDB5A3BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D74BA40254A6B4F066D4C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DFA02A2DFDDABBB4B24E829 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5DA1000000000000000000F1 /* manifest.json */,
+				5DA1000000000000000000F2 /* content.js */,
+				5DA1000000000000000000F3 /* icons */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5D2EAB5745E29B2AE56393C5 = {
+			isa = PBXGroup;
+			children = (
+				5DF1304E5FC83ABEDDF6FEA1 /* Sideway */,
+				5D67144BB1E60CD7BA94B571 /* Sideway Extension */,
+				5D26F08429CDC4A5C16CCB74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DF1304E5FC83ABEDDF6FEA1 /* Sideway */ = {
+			isa = PBXGroup;
+			children = (
+				5DFB31C9B4DEE6AB8F57510A /* AppDelegate.swift */,
+				5D9BD9156A997BFE37D34A4D /* ViewController.swift */,
+				5D7DDCE02341EA85288D053C /* Icon.png */,
+				5DCFAA68F80CD6FD00C795C9 /* Assets.xcassets */,
+				5D965171CEAB3680B5B27C9B /* Sideway.entitlements */,
+			);
+			path = Sideway;
+			sourceTree = "<group>";
+		};
+		5D67144BB1E60CD7BA94B571 /* Sideway Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA02A2DFDDABBB4B24E829 /* Resources */,
+				5D05B3014CA8DDEDD3195E10 /* SafariWebExtensionHandler.swift */,
+				5D94DAF0C6D8616CE266A535 /* Info.plist */,
+				5D108B903FF8A0DE73DC3FD2 /* Sideway Extension.entitlements */,
+			);
+			path = "Sideway Extension";
+			sourceTree = "<group>";
+		};
+		5D26F08429CDC4A5C16CCB74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D94EEB10892997D944341B5 /* Sideway.app */,
+				5D2D0EF33BB9BDB1F15930EF /* Sideway Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D160DB906678832123FFC43 /* Sideway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D5976B7ADC5D5BB67996FFD /* Build configuration list for PBXNativeTarget "Sideway" */;
+			buildPhases = (
+				5DE604350FD4276882023A39 /* Sources */,
+				5D3E01A711DC2333BDB5A3BF /* Frameworks */,
+				5D64E674F419F07988C0C19D /* Resources */,
+				5D806482D9E37DD084D041D7 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DC4755F36E9F1EAF48CD5FC /* PBXTargetDependency */,
+			);
+			name = Sideway;
+			productName = Sideway;
+			productReference = 5D94EEB10892997D944341B5 /* Sideway.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D3B65A1141D76A5EE09149C /* Sideway Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DE910B1A6A9BEBAA6799A1A /* Build configuration list for PBXNativeTarget "Sideway Extension" */;
+			buildPhases = (
+				5D4C436BDCBA1860EB4F10C7 /* Sources */,
+				5D74BA40254A6B4F066D4C00 /* Frameworks */,
+				5DD306DE277A3082411B6A0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sideway Extension";
+			productName = "Sideway Extension";
+			productReference = 5D2D0EF33BB9BDB1F15930EF /* Sideway Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DA5271A3DFEA20AED3D78F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					5D160DB906678832123FFC43 = {
+						CreatedOnToolsVersion = 27.1;
+					};
+					5D3B65A1141D76A5EE09149C = {
+						CreatedOnToolsVersion = 27.1;
+					};
+				};
+			};
+			buildConfigurationList = 5D8D8C79A63F6E8927988550 /* Build configuration list for PBXProject "Sideway" */;
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ko,
+				Base,
+			);
+			mainGroup = 5D2EAB5745E29B2AE56393C5;
+			productRefGroup = 5D26F08429CDC4A5C16CCB74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D160DB906678832123FFC43 /* Sideway */,
+				5D3B65A1141D76A5EE09149C /* Sideway Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D64E674F419F07988C0C19D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDF0011393088BF12FF8183 /* Assets.xcassets in Resources */,
+				5DDC3669D1F41B80A9876BC5 /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD306DE277A3082411B6A0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA1000000000000000000B1 /* manifest.json in Resources */,
+				5DA1000000000000000000B2 /* content.js in Resources */,
+				5DA1000000000000000000B3 /* icons in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DE604350FD4276882023A39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DBA6A4F29F16ADF48747874 /* ViewController.swift in Sources */,
+				5D6264BEA1A1282B419970B2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D4C436BDCBA1860EB4F10C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF1C0BCF48E8B2E2995C5AD /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DC4755F36E9F1EAF48CD5FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D3B65A1141D76A5EE09149C /* Sideway Extension */;
+			targetProxy = 5D2887FE8DFF5F3EF61EF210 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5D12679E7BE0DF8987B17C98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5D6402918FB47CB7BCBB88F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5DDBEF891065CBF8694154E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sideway/Sideway.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XSDBV8D2XL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Sideway;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moimz.Sideway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		5DC44C5ADDC5AC3D1C5DFAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sideway/Sideway.entitlements;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XSDBV8D2XL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Sideway;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moimz.Sideway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
+		5DEC23689715765C35266CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Sideway Extension/Sideway Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XSDBV8D2XL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sideway Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Sideway;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moimz.Sideway.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		5DCA40402EE2B594E7C8DD34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Sideway Extension/Sideway Extension.entitlements";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XSDBV8D2XL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sideway Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Sideway;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moimz.Sideway.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D8D8C79A63F6E8927988550 /* Build configuration list for PBXProject "Sideway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D12679E7BE0DF8987B17C98 /* Debug */,
+				5D6402918FB47CB7BCBB88F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D5976B7ADC5D5BB67996FFD /* Build configuration list for PBXNativeTarget "Sideway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDBEF891065CBF8694154E3 /* Debug */,
+				5DC44C5ADDC5AC3D1C5DFAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DE910B1A6A9BEBAA6799A1A /* Build configuration list for PBXNativeTarget "Sideway Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DEC23689715765C35266CFE /* Debug */,
+				5DCA40402EE2B594E7C8DD34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DA5271A3DFEA20AED3D78F2 /* Project object */;
+}
